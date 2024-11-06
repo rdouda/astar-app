@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A* Pathfinding</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="controls">
+      <button id="startButton">Start</button>
+      <button id="endButton">End</button>
+      <button id="barrierButton">Barrier</button>
+      <button id="clearGridButton">Clear Grid</button>
+      <button id="findPathButton">Find Path</button>
+    </div>
+    <div class="main-container">
+      <div class="grid-container">
+        <svg id="grid"></svg>
+      </div>
+      <div class="description">
+        <h3>How to Use:</h3>
+        <p>
+          - Use the "Start" button to select the starting point on the grid.<br>
+          - Use the "End" button to select the destination.<br>
+          - Click or drag to place barriers with the "Barrier" button.<br>
+          - Click "Clear Grid" to reset the grid.<br>
+          - Press "Find Path" to calculate the shortest path using the A* algorithm.<br>
+          - Right-click to remove barriers.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
